@@ -1,0 +1,13 @@
+# Dependências
+node_modules/
+
+# Arquivos de configuração do ambiente
+.env
+
+# Pastas de logs
+logs
+*.log
+
+# Outros arquivos e pastas ignorados
+dist
+temp
