@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luna: RevoLuna-se</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/style/estilo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@700&display=swap" rel="stylesheet">
-</head>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luna: RevoLuna-se</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+        <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="/style/estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@700&display=swap" rel="stylesheet">
+    </head>
 <body>
+
+            <!-- Banner de cookies flutuante -->
+            <div id="cookie-banner" class="cookie-banner">
+                <div class="row centro">
+                    <h4>Este site usa cookies para garantir a melhor experiência do usuário. <a href="politicaprivacidade.html">Saiba mais</a></h4>
+                </div>
+                <div class="row centro">
+                    <button id="accept-cookies" class="amarelo">Aceitar</button>
+                    <button id="decline-cookies" class="verde">Recusar</button>
+                </div>
+            </div>
+
 
     <header>
         <nav>            
             <div class="container">
-                <div class="logo"><img src="/img/logo.png" alt=""></div>
+                <div class="logo"><a href="index.html"><img src="/img/logo.png" alt=""></a></div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#sobre">SOBRE</a></li>
-                        <li><a href="#vagas">VAGAS</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="sobre.html">SOBRE</a></li>
+                        <li><a href="index.html#vagas">VAGAS</a></li>
                         <li class="dropdown">
                             <a href="#" id="servicos-link">SERVIÇOS</a>
                             <div class="dropdown-content" id="submenu-servicos">
@@ -35,7 +46,7 @@
                                 <a href="#">Para pacientes</a>
                             </div>
                         </li>
-                        <li><a href="#">CONTATO</a></li>
+                        <li><a href="#" class="botao-modal-contato">CONTATO</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,68 +54,244 @@
     </header>
 
     <main>
-        <div class="container">
-            <h1>LUNA: UM NOVO MODELO DE NEGÓCIO PARA A ANESTESIOLOGIA</h1>
-            <h3>Compromisso com os objetivos e as metas dos nossos clientes</h3>
-            <p>A Luna redefine a anestesiologia, unindo inovação e tecnologia para entregar serviços de alta qualidade, 
-                centrados no paciente. Almejamos liderar o setor, gerenciando equipes de anestesiologia com eficiência e eficácia. 
-                Nossos valores ressaltam a excelência técnica, colaboração, e integridade, estabelecendo um novo padrão de cuidado. 
-                Através da inovação contínua, a Luna se propõe a transformar a anestesiologia, garantindo segurança e qualidade na jornada do paciente.</p>
-        </div>
-        <div class="container">
-            <h2>Alinhando Esforços para Resultados Excepcionais</h2>
-            <h3>Objetivos para um corpo clínico engajado, eficaz e eficiente</h3>
-            <p>Nosso planejamento estratégico se apoia em três pilares: Excelência em anestesiologia, Eficiência operacional e gestão de recursos e Aprimoramento profissional</p>
-            <div class="tr">
-                <h3>Excelência em anestesiologia</h3>
-                <p>Com protocolos institucionais assistênciais baseado nas mais recentes evidências científicas é possível ter um corpo clínico homogêneo, 
-                    garantindo as melhores condutas e resultados para os pacientes. Possibilitamos, assim, a criação de indicadores bem definidos para seguimento e controle de qualidade,
-                    com metas bem estabelecidas para cada médico do nosso corpo clínico.
-                </p>
-            </div>
-            <div class="tr">
-                <h3>Eficiência operacional e gestão de recursos</h3>
-                <p>Um dos maiores desafios na gestão de um centro cirúrgico é o adequado dimensionamento da equipe de anestesiologistas. Ao iniciar um novo projeto,
-                    analisamos os dados de giro de sala, tempos cirúrgicos e anestésicos, buscando otimizar os recursos e aumentar a eficiência operacional, gerando um 
-                    incremento significativo da produtividade.
-                </p>
-            </div>
-            <div class="tr">
-                <h3>Aprimoramento profissional</h3>
-                <p>Ter um programa de educação permanente é essencial para manter nosso corpo clínico atualizado nas mais recentes evidências científicas. Atualmente, 
-                    a quantidade de informações torna muito difícil que mesmo os profissionais mais dedicados consigam dividir a carga horária de trabalho e o aprimoramento profissional. 
-                    Por isso, investimos em módulos de atualização com os profissionais mais renovamdos na sua área de atuação, discussão de casos clínicos, cursos e workshops, além do 
-                    incentivo a participação de congressos e simpósios relevantes da anestesiologia. Também provemos incetivo a realização de pesquisas clínicas para que possamos nos tornar 
-                    atores do desenvolvimento da anestesiologia. Acompanhamos o desenvolvimento científico do nosso corpo clínico a partir de indicadores específicos e metas a serem alcançadas 
-                    por todos os nossos anestesiologistas.
-                </p>
+        <div class="fundo_verde">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-6">
+                        <div class="row"><h1> Compromisso com os objetivos e as metas dos nossos clientes</h1></div>
+                        <div class="row"><p>A Luna redefine a anestesiologia, unindo inovação e tecnologia para entregar serviços de alta qualidade, 
+                            centrados no paciente. Almejamos liderar o setor, gerenciando equipes de anestesiologia com eficiência e eficácia. 
+                            Nossos valores ressaltam a excelência técnica, colaboração, e integridade, estabelecendo um novo padrão de cuidado. 
+                            Através da inovação contínua, a Luna se propõe a transformar a anestesiologia, garantindo segurança e qualidade na jornada do paciente.
+                            </p></div>
+                    </div>
+                    <div class="col-6">
+                        <img src="/img/fig2.png" alt="anestesistas" class="img-hero">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container">
+
+        
+        <div class="container2">
+            <div class="row"><h2>Alinhando Esforços para Resultados Excepcionais</h2></div>
             
-            <div class="tr">
-                <h1> Missão, visão e valores</h1>
-                <h3>Unidos pela inovação, uma startup da área da saúde</h3>
-                <p>A Luna nasceu no ínicio de 2023 a partir de experiências de sucesso em gestão de serviços médicos e com a visão de que 
-                    o modelo vigente não atendia mais as expectativas dos clientes, corpo clínico e pacientes. Já nascemos grandes, coordenando mais de 
-                    150 médicos anestesiologistas em três grandes centros de saúde na Grande São Paulo.</p>
-                <p>O mercado da saúde no Brasil se tornou muito competitivo nos últimos anos, com novos desafios para os nossos clientes que 
-                    necessitam de parceiros que tenham a atitude de sócios do negócio e não apenas prestadores de serviço. Entender a particularidade de cada um 
-                    de nosso clientes, seja no setor privado como público, é a nossa missão.</p>
-                <p>Nosso compromisso com a ética e compliance é inegociável, possuimos um modelo de governança que segue os princípios de respeito ao meio ambiente e 
-                    combate as injustiças sociais, entendemos que todo negócio gera um impacto na sociedade e assim carrega responsabilidades inerentes. Atuamos fortemente no combate a 
-                    corrupção e seguimos as lei geral de proteção de dados, garantindo que os serviços prestados sejam de qualidade, mas também íntegros na sua essência.
-                </p>
+            <div class="col">     
+                <div class="row"><h3>Objetivos para um corpo clínico engajado, eficaz e eficiente</h3></div>
+                <div class="row"><p>Nosso planejamento estratégico se apoia em três pilares: Excelência em anestesiologia, Eficiência operacional e gestão de recursos e Aprimoramento profissional</p></div>
             </div>
-            <div class="tr">
-                
+            <div class="row center"><img src="/img/gestao.png" alt="" class="img-grande"></div>
+
+        </div>
+
+        <div class="container2">            
+            <div class="row center">
+                <div class="col-3">
+                    <h3>Excelência em anestesiologia</h3>
+                    <p>Com protocolos institucionais assistênciais baseado nas mais recentes evidências científicas é possível ter um corpo clínico homogêneo, 
+                        garantindo as melhores condutas e resultados para os pacientes. Possibilitamos, assim, a criação de indicadores bem definidos para seguimento e controle de qualidade,
+                        com metas bem estabelecidas para cada médico do nosso corpo clínico.</p>                    
+                </div>
+                <div class="col-3">
+                    <h3>Eficiência operacional</h3>
+                    <p>Um dos maiores desafios na gestão de um centro cirúrgico é o adequado dimensionamento da equipe de anestesiologistas. Ao iniciar um novo projeto,
+                        analisamos os dados de giro de sala, tempos cirúrgicos e anestésicos, buscando otimizar os recursos e aumentar a eficiência operacional, gerando um 
+                        incremento significativo da produtividade.</p>                   
+                </div>
+                <div class="col-3">
+                    <h3>Aprimoramento profissional</h3>
+                    <p>Ter um programa de educação permanente é essencial para manter nosso corpo clínico atualizado nas mais recentes evidências científicas. Investimos em módulos de atualização, discussão de casos clínicos, cursos e workshops, além de incentivar pesquisas clínicas e acompanhar o desenvolvimento científico de nossos anestesiologistas</p>
+                </div>
+            </div>               
+        </div>
+        <div class="fundo_amarelo">
+            
+            <div class="container">
+                <div class="col">            
+                    <div class="row">
+                        <h1> Missão, visão e valores</h1>
+                    </div>
+                    <div class="row">
+                        <h3>Unidos pela inovação, uma startup da área da saúde</h3>
+                        <p>A Luna nasceu no ínicio de 2023 a partir de experiências de sucesso em gestão de serviços médicos e com a visão de que 
+                            o modelo vigente não atendia mais as expectativas dos clientes, corpo clínico e pacientes. Já nascemos grandes, coordenando mais de 
+                            150 médicos anestesiologistas em três grandes centros de saúde na Grande São Paulo.</p>
+                        <p>O mercado da saúde no Brasil se tornou muito competitivo nos últimos anos, com novos desafios para os nossos clientes que 
+                            necessitam de parceiros que tenham a atitude de sócios do negócio e não apenas prestadores de serviço. Entender a particularidade de cada um 
+                            de nosso clientes, seja no setor privado como público, é a nossa missão.</p>
+                        <p>Nosso compromisso com a ética e compliance é inegociável, possuimos um modelo de governança que segue os princípios de respeito ao meio ambiente e 
+                            combate as injustiças sociais, entendemos que todo negócio gera um impacto na sociedade e assim carrega responsabilidades inerentes. Atuamos fortemente no combate a 
+                            corrupção e seguimos as lei geral de proteção de dados, garantindo que os serviços prestados sejam de qualidade, mas também íntegros na sua essência.
+                        </p>
+                    </div>
             </div>
         </div>
+
+        <div class="container">
+                <div class="row">
+                    <h1>Nossa equipe</h1>
+                </div>
+        </div>
+        <div class="container">    
+
+            <div class="col2">
+                <img src="img/rafael.png" alt="" class="foto">
+                <h3 class="sem-espaco">Dr. Rafael Pivovar C. Rosa</h3>
+                    <div class="row">
+                        <h5 class="sem-espaco">CREMESP 164090 / RQE 103880</h5>
+                        <h4 class="sem-espaco">Fundador e diretor executivo</h4>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li>Anestesiologista pela Faculdade de Medicina do ABC associado a Sociedade Brasileira de Anestesiologia</li>
+                            <li>Médico pela Universidade Federal de São Carlos</li>
+                            <li>MBA em Gestão de Serviços de Saúde pela PUC-RS</li>
+                            <li>MBA em Data Science e Analytics pela USP/ESALQ</li>
+                        </ul> 
+                    </div>              
+            </div>
+
+            <div class="col2">
+                <img src="img/joao.png" alt="" class="foto">
+                <h3 class="sem-espaco">João Nasser Loffreda Gorayb</h3>
+                    <div class="row"></div>
+                    <div class="row"><h4 class="sem-espaco">Diretor executivo</h4></div>
+                    <div class="row">
+                        <ul>
+                            <li>Administrador pela Universidade Presbiteriana Mackenzie</li>
+                            <li>Fundador da Cia. da Consulta e Edutiva</li>
+                            <li>Especialista em Business e Growth</li>
+                        </ul> 
+                    </div>             
+            </div>            
+            
+        </div>
+
+        <div class="container">
+            <div class="col2">
+                <img src="img/aline.png" alt="" class="foto">
+                <h3 class="sem-espaco">Aline Fonseca</h3>
+                <div class="row"><h4 class="sem-espaco">Gerente geral</h4></div>
+                <div class="row">
+                    <ul>
+                        <li>Economista pela Universidade Presbiteriana Mackenzie</li>
+                        <li>MBA em Finanças e Contraladoria pela USP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col2">
+                <img src="img/thais.png" alt="" class="foto">
+                <h3 class="sem-espaco">Thais Pereira</h3>
+                <div class="row"><h4 class="sem-espaco"> Gerente financeira</h4></div>
+                <div class="row">
+                    <ul>
+                        <li>Administradora pela Universidade Paulista</li>
+                        <li>Pós graduação em Contabilidade e Finanças pela FECAP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col2">
+                <img src="img/natani.png" alt="" class="foto">
+                <h3 class="sem-espaco">Natani Hatakeyama</h3>
+                <div class="row"><h4 class="sem-espaco">Relacionamento médico</h4></div>
+                <div class="row">
+                    <ul>
+                        <li>Bacharel em Gerontologia pela Universidade de São Paulo</li>
+                        <li>Pós graduação em Gestão de Qualidade em saúde IEP/Albert Einstein</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col2">
+                <img src="img/geovani.png" class="foto">
+                <h3 class="sem-espaco">Geovani Gomes</h3>
+                <div class="row"><h4 class="sem-espaco">Gerente comercial</h4></div>
+                <div class="row">
+                    <ul>
+                        <li>Administrador de empresas com especialização em vendas</li>
+                        <li>Gestão de equipes de alto desempenho com foco em processos e resultados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 
+    <footer class="footer">
+        <div class="container-top">
+            <div class="col1">
+                <form id="formulario_email" action="/cadastro" method="post">
+                    <input type="email" id="email2" name ="email" placeholder="Seu e-mail" class="input">
+                    <button type="submit" class="branco-email">Enviar</button>                                        
+                </form>
+                <div class="tr"><p>Ao se inscrever, você concorda com nossa <a href="politicaprivacidade.html">Política de Privacidade</a> e aceita receber atualizações de nossa empresa</p></div>
+                <span></span>                               
+            </div>
+            <div class="col1">
+                <h5>Luna</h5>
+                <ul class="links">
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="politicaprivacidade.html">Política de Privacidade</a></li>
+                    <li><a href="#modelo">Trabalhe conosco</a></li>                    
+                </ul>
+            </div>
+            <div class="col1"><h5>Serviços</h5>
+                <ul class="links">
+                    <li><a href="#sobre">Para anestesistas</a></li>
+                    <li><a href="#">Para empresas</a></li>
+                    <li><a href="#">Para pacientes</a></li>
+                </ul>
+            </div>
+            <div class="col1" id="aqui"><h5>Contato</h5>
+                <ul class="links">
+                    <li><a href="#aqui" class="botao-modal-contato">Fale conosco</a></li></li>
+                </ul>
+            </div>
+            <div class="col1">
+                <h5>Rede sociais</h5>
+                <ul class="links">
+                    <li><img src="/img/Instagram.png" alt="Instagram"><a href="https://www.instagram.com/revoluna.se/" target="_blank">Instagram</a></li>
+                    <li><img src="/img/Facebook.png" alt="Facebook"><a href="https://www.facebook.com/revoluna.se/" target="_blank">Facebook</a></li>
+                    <li><img src="/img/LinkedIn.png" alt="LinkedIn"><a href="https://www.linkedin.com/company/pivovar-anestesiologia/" target="_blank">LinkedIn</a></li>
+                    <li><img src="/img/X.png" alt="Twitter"><a href="https://twitter.com/revoluna_anest" target="_blank">Twitter</a></li>
+                </ul>   
+            </div>
+        </div>
+        <div class="container-botton">
+            <div class="tr"><a href="#"><img src="/img/logo.png" alt=""></a></div>
+            <div class="tr"><p>Todos os direitos reservados. Luna 2023</p></div>
+        </div>
+           
+    </footer> 
 
+<!-- Modal Contato -->
+<div id="modalContato" class="modal">
+    <div class="modal-conteudo">
+        <div class="container-modal">
+            <div class="tr-md logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="tr-md">
+                <h2>Preencha o formulario abaixo para entrar em contato:</h2>
+                <form action="/cadastro" method="post" id="contato" class="tr-md2">
+                    <input type="text" name="nome" placeholder="Nome completo" required>
+                    <input type="email" name="email" placeholder="Endereço de e-mail" required>
+                    <textarea name="contato" rows="4" cols="50" placeholder="Insira seu texto aqui " required></textarea>
+                    <div class="concordo">
+                        <input type="checkbox" id="concordo" name="concordo" required>
+                        <p>Eu concordo com os <a href="politicaprivacidade.html">termos e condições.</a></p>
+                        <label for="concordo"></label>
+                        <input type="submit" class="verde" value="Enviar">
+                </form>                
+            </div>
+        </div>
+    </div>
+</div>
 
+<script src="/scripts/scripts.js"></script>
 
     
 </body>

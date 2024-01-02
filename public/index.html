@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +16,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+        <!-- Banner de cookies flutuante -->
+        <div id="cookie-banner" class="cookie-banner">
+            <div class="row centro">
+                <h4>Este site usa cookies para garantir a melhor experiência do usuário. <a href="politicaprivacidade.html">Saiba mais</a></h4>
+            </div>
+            <div class="row centro">
+                <button id="accept-cookies" class="amarelo">Aceitar</button>
+                <button id="decline-cookies" class="verde">Recusar</button>
+            </div>
+        </div>
+    
     <header>
         <nav>            
             <div class="container">
-                <div class="logo"><img src="/img/logo.png" alt=""></div>
+                <div class="logo"><a href="index.html"><img src="/img/logo.png" alt=""></a></div>
                 <div class="menu">
                     <ul>
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#sobre">SOBRE</a></li>
+                        <li><a href="sobre.html">SOBRE</a></li>
                         <li><a href="#vagas">VAGAS</a></li>
                         <li class="dropdown">
                             <a href="#" id="servicos-link">SERVIÇOS</a>
@@ -33,7 +44,7 @@
                                 <a href="#">Para pacientes</a>
                             </div>
                         </li>
-                        <li><a href="#">CONTATO</a></li>
+                        <li><a href="#" class="botao-modal-contato">CONTATO</a></li>
                     </ul>
                 </div>
             </div>
@@ -247,14 +258,14 @@
                     <input type="email" id="email2" name ="email" placeholder="Seu e-mail" class="input">
                     <button type="submit" class="branco-email">Enviar</button>                                        
                 </form>
-                <div class="tr"><p>Ao se inscrever, você concorda com nossa <a href="#">Política de Privacidade</a> e aceita receber atualizações de nossa empresa</p></div>
+                <div class="tr"><p>Ao se inscrever, você concorda com nossa <a href="politicaprivacidade.html">Política de Privacidade</a> e aceita receber atualizações de nossa empresa</p></div>
                 <span></span>                               
             </div>
             <div class="col1">
                 <h5>Luna</h5>
                 <ul class="links">
-                    <li><a href="#">Quem somos</a></li>
-                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="sobre.html">Quem somos</a></li>
+                    <li><a href="politicaprivacidade.html">Política de Privacidade</a></li>
                     <li><a href="#modelo">Trabalhe conosco</a></li>                    
                 </ul>
             </div>
@@ -265,9 +276,9 @@
                     <li><a href="#">Para pacientes</a></li>
                 </ul>
             </div>
-            <div class="col1"><h5>Contato</h5>
+            <div class="col1" id="aqui"><h5>Contato</h5>
                 <ul class="links">
-                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#aqui" class="botao-modal-contato">Fale conosco</a></li>
                 </ul>
             </div>
             <div class="col1">
@@ -276,7 +287,7 @@
                     <li><img src="/img/Instagram.png" alt="Instagram"><a href="https://www.instagram.com/revoluna.se/" target="_blank">Instagram</a></li>
                     <li><img src="/img/Facebook.png" alt="Facebook"><a href="https://www.facebook.com/revoluna.se/" target="_blank">Facebook</a></li>
                     <li><img src="/img/LinkedIn.png" alt="LinkedIn"><a href="https://www.linkedin.com/company/pivovar-anestesiologia/" target="_blank">LinkedIn</a></li>
-                    <li><img src="/img/X.png" alt="Twitter"><a href="#" target="_blank">Twitter</a></li>
+                    <li><img src="/img/X.png" alt="Twitter"><a href="https://twitter.com/revoluna_anest" target="_blank">Twitter</a></li>
                 </ul>   
             </div>
         </div>
@@ -286,7 +297,7 @@
         </div>
            
     </footer>            
-    >
+    
 
 <!-- Modal Cadastro-->
 <div id="modalFormulario" class="modal">
@@ -308,7 +319,7 @@
             
                     <div class="concordo">
                         <input type="checkbox" id="concordo" name="concordo" required>
-                        <p>Eu concordo com os <a href="#">termos e condições.</a></p>
+                        <p>Eu concordo com os <a href="politicaprivacidade.html">termos e condições.</a></p>
                         <label for="concordo"></label>                
                     </div>
             
@@ -336,6 +347,30 @@
             <div class="tr-md">
                 <h1 id="mensagemConfirmacao">Cadastro realizado com sucesso</h1>
                 <h3>Você receberá um e-mail de confirmação com as instruções para fazer parte da nossa comunidade</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Contato -->
+<div id="modalContato" class="modal">
+    <div class="modal-conteudo">
+        <div class="container-modal">
+            <div class="tr-md logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="tr-md">
+                <h2>Preencha o formulario abaixo para entrar em contato:</h2>
+                <form action="/cadastro" method="post" id="contato" class="tr-md2">
+                    <input type="text" name="nome" placeholder="Nome completo" required>
+                    <input type="email" name="email" placeholder="Endereço de e-mail" required>
+                    <textarea name="contato" rows="4" cols="50" placeholder="Insira seu texto aqui " required></textarea>
+                    <div class="concordo">
+                        <input type="checkbox" id="concordo" name="concordo" required>
+                        <p>Eu concordo com os <a href="politicaprivacidade.html">termos e condições.</a></p>
+                        <label for="concordo"></label>
+                        <input type="submit" class="verde" value="Enviar">
+                </form>                
             </div>
         </div>
     </div>

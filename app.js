@@ -27,6 +27,7 @@ app.post('/cadastro', (req, res) => {
     const novoUsuario = new Usuario({
         nome: req.body.nome,
         email: req.body.email,
+        contato: req.body.contato,
         // Adicione mais campos conforme necessário
     });
 
